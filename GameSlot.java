@@ -98,16 +98,24 @@ public class GameSlot extends JPanel
     private void updateColor()
     {
         HashMap<Integer, Color> colorMap = new HashMap<Integer, Color>();
-        colorMap.put(0, new Color(0, 0, 0));
-        colorMap.put(2, new Color(20, 0, 0));
-        colorMap.put(4, new Color(20, 20, 0));
-        colorMap.put(16, new Color(20, 20, 20));
-        colorMap.put(32, new Color(40, 20, 20));
-        colorMap.put(64, new Color(40, 40, 20));
-        colorMap.put(128, new Color(40, 40, 40));
-        colorMap.put(256, new Color(60, 40, 40));
-        colorMap.put(512, new Color(60, 60, 40));
-        //finish this later
+        colorMap.put(0, new Color(212, 212, 212));
+        colorMap.put(2, new Color(252, 77, 18));
+        colorMap.put(4, new Color(231, 125, 10));
+        colorMap.put(8, new Color(245, 242, 120));
+        colorMap.put(16, new Color(153, 241, 20));
+        colorMap.put(32, new Color(24, 177, 20));
+        colorMap.put(64, new Color(32, 175, 223));
+        colorMap.put(128, new Color(37, 16, 135));
+        colorMap.put(256, new Color(183, 44, 243));
+        colorMap.put(512, new Color(215, 9, 158));
+        colorMap.put(1024, new Color(202, 0, 0));
+        colorMap.put(2048, new Color(255, 187, 28));
+        colorMap.put(4096, new Color(244, 244, 0));
+        colorMap.put(8192, new Color(13, 255, 24));
+        colorMap.put(16384, new Color(128, 255, 255));
+        colorMap.put(32768, new Color(27, 109, 235));
+        colorMap.put(65536, new Color(142, 14, 248));
+        colorMap.put(131072, new Color(255, 6, 236));
 
         setBackground(colorMap.get(currentNum));
     }
